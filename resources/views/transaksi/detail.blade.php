@@ -63,7 +63,7 @@
                     </tbody>
                 </table>
             </div>
-            @if ($transaksi->dibayar == 'belum_dibayar')
+            @if ($transaksi->dibayar == 'belum_bayar')
                 @include('transaksi.detail-form', ['transaksi' => $transaksi])
                 @else
                 @include('transaksi.detail-cash', ['transaksi' => $transaksi])

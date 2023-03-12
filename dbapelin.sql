@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 25 Feb 2023 pada 06.45
+-- Waktu pembuatan: 12 Mar 2023 pada 08.00
 -- Versi server: 10.4.25-MariaDB
 -- Versi PHP: 8.1.10
 
@@ -60,75 +60,77 @@ CREATE TABLE `log_activities` (
 --
 
 INSERT INTO `log_activities` (`id`, `user_id`, `ip`, `subject`, `method`, `url`, `agent`, `created_at`, `updated_at`) VALUES
-(1, 1, '127.0.0.1', 'berhasil membuat transaksi', 'POST', 'http://localhost:8000/transaksi/member/2', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-10 04:56:03', '2023-02-10 04:56:03'),
-(2, 1, '127.0.0.1', 'berhasil menambahkan outlet', 'POST', 'http://localhost:8000/outlet', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-10 06:52:58', '2023-02-10 06:52:58'),
-(3, 1, '127.0.0.1', 'berhasil menambahkan user', 'POST', 'http://localhost:8000/user', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-10 06:56:06', '2023-02-10 06:56:06'),
-(4, 1, '127.0.0.1', 'berhasil menambahkan outlet', 'POST', 'http://localhost:8000/outlet', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-10 06:58:34', '2023-02-10 06:58:34'),
-(5, 1, '127.0.0.1', 'berhasil menambahkan user', 'POST', 'http://localhost:8000/user', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-10 07:04:52', '2023-02-10 07:04:52'),
-(6, 1, '127.0.0.1', 'berhasil menambahkan user', 'POST', 'http://localhost:8000/user', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-10 07:05:21', '2023-02-10 07:05:21'),
-(7, 1, '127.0.0.1', 'berhasil mengubah outlet', 'PUT', 'http://localhost:8000/outlet/4', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-10 07:10:50', '2023-02-10 07:10:50'),
-(8, 1, '127.0.0.1', 'berhasil mengubah user', 'PUT', 'http://localhost:8000/user/6', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-10 07:11:37', '2023-02-10 07:11:37'),
-(9, 1, '127.0.0.1', 'berhasil Logout', 'POST', 'http://localhost:8000/logout', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-10 07:15:17', '2023-02-10 07:15:17'),
-(10, 1, '127.0.0.1', 'berhasil Login', 'POST', 'http://localhost:8000/login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-10 07:32:05', '2023-02-10 07:32:05'),
-(11, 1, '127.0.0.1', 'berhasil mengubah outlet', 'PUT', 'http://localhost:8000/outlet/4', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-10 07:32:54', '2023-02-10 07:32:54'),
-(12, 1, '127.0.0.1', 'berhasil menambahkan paket', 'POST', 'http://localhost:8000/paket', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-10 07:34:36', '2023-02-10 07:34:36'),
-(13, 1, '127.0.0.1', 'berhasil menambahkan paket', 'POST', 'http://localhost:8000/paket', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-10 07:35:19', '2023-02-10 07:35:19'),
-(14, 1, '127.0.0.1', 'berhasil menambahkan paket', 'POST', 'http://localhost:8000/paket', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-10 07:35:53', '2023-02-10 07:35:53'),
-(15, 1, '127.0.0.1', 'berhasil menambahkan member', 'POST', 'http://localhost:8000/member', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-10 07:36:53', '2023-02-10 07:36:53'),
-(16, 1, '127.0.0.1', 'berhasil menambahkan member', 'POST', 'http://localhost:8000/member', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-10 07:37:47', '2023-02-10 07:37:47'),
-(17, 1, '127.0.0.1', 'berhasil Login', 'POST', 'http://localhost:8000/login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-10 09:55:55', '2023-02-10 09:55:55'),
-(18, 1, '127.0.0.1', 'berhasil mengubah Transaksi', 'PUT', 'http://localhost:8000/transaksi/1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-10 09:56:59', '2023-02-10 09:56:59'),
-(19, 1, '127.0.0.1', 'berhasil mencetak struk Transaksi', 'GET', 'http://localhost:8000/transaksi/1/invoice', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-10 09:57:09', '2023-02-10 09:57:09'),
-(20, 1, '127.0.0.1', 'berhasil membuat Transaksi', 'POST', 'http://localhost:8000/transaksi/member/1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-10 10:20:33', '2023-02-10 10:20:33'),
-(21, 1, '127.0.0.1', 'berhasil mencetak struk Transaksi', 'GET', 'http://localhost:8000/transaksi/1/invoice', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-10 10:21:14', '2023-02-10 10:21:14'),
-(22, 1, '127.0.0.1', 'berhasil membuat Transaksi', 'POST', 'http://localhost:8000/transaksi/member/3', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-10 10:38:07', '2023-02-10 10:38:07'),
-(23, 1, '127.0.0.1', 'berhasil Logout', 'POST', 'http://localhost:8000/logout', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-10 11:17:25', '2023-02-10 11:17:25'),
-(24, 5, '127.0.0.1', 'berhasil Login', 'POST', 'http://localhost:8000/login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-13 02:48:01', '2023-02-13 02:48:01'),
-(25, 5, '127.0.0.1', 'berhasil membuat Transaksi', 'POST', 'http://localhost:8000/transaksi/member/4', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-13 02:49:41', '2023-02-13 02:49:41'),
-(26, 5, '127.0.0.1', 'berhasil membuat Transaksi', 'POST', 'http://localhost:8000/transaksi/member/4', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-13 02:54:01', '2023-02-13 02:54:01'),
-(27, 5, '127.0.0.1', 'berhasil mengubah Transaksi', 'PUT', 'http://localhost:8000/transaksi/5', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-13 02:55:09', '2023-02-13 02:55:09'),
-(28, 5, '127.0.0.1', 'berhasil mengubah Transaksi', 'PUT', 'http://localhost:8000/transaksi/5', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-13 02:55:41', '2023-02-13 02:55:41'),
-(29, 5, '127.0.0.1', 'berhasil mencetak struk Transaksi', 'GET', 'http://localhost:8000/transaksi/5/invoice', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-13 02:56:05', '2023-02-13 02:56:05'),
-(30, 5, '127.0.0.1', 'berhasil Logout', 'POST', 'http://localhost:8000/logout', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-13 03:24:09', '2023-02-13 03:24:09'),
-(31, 1, '127.0.0.1', 'berhasil Login', 'POST', 'http://localhost:8000/login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-13 03:24:13', '2023-02-13 03:24:13'),
-(32, 1, '127.0.0.1', 'berhasil membuat Laporan Harian', 'GET', 'http://localhost:8000/laporan/harian?_token=B1IGXavetBZEfHbaQaJdWvq7oQt68fkPdzFFVm2W&outlet_id=4&tanggal=2023-02-13', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-13 03:24:44', '2023-02-13 03:24:44'),
-(33, 1, '127.0.0.1', 'berhasil membuat Laporan Bulanan', 'GET', 'http://localhost:8000/laporan/perbulan?_token=B1IGXavetBZEfHbaQaJdWvq7oQt68fkPdzFFVm2W&bulan=2&outlet_id=4&tahun=2023', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-13 03:25:51', '2023-02-13 03:25:51'),
-(34, 2, '127.0.0.1', 'berhasil Login', 'POST', 'http://localhost:8000/login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-13 03:28:54', '2023-02-13 03:28:54'),
-(35, 3, '127.0.0.1', 'berhasil Login', 'POST', 'http://localhost:8000/login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36', '2023-02-13 03:30:21', '2023-02-13 03:30:21'),
-(36, 1, '127.0.0.1', 'berhasil Login', 'POST', 'http://localhost:8000/login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-21 01:36:38', '2023-02-21 01:36:38'),
-(37, 1, '127.0.0.1', 'berhasil membuat Transaksi', 'POST', 'http://localhost:8000/transaksi/member/1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-21 01:39:30', '2023-02-21 01:39:30'),
-(38, 1, '127.0.0.1', 'berhasil Login', 'POST', 'http://localhost:8000/login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-21 02:11:39', '2023-02-21 02:11:39'),
-(39, 1, '127.0.0.1', 'berhasil Logout', 'POST', 'http://localhost:8000/logout', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-21 02:23:55', '2023-02-21 02:23:55'),
-(40, 1, '127.0.0.1', 'berhasil Login', 'POST', 'http://localhost:8000/login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-21 02:24:00', '2023-02-21 02:24:00'),
-(41, 1, '127.0.0.1', 'berhasil Logout', 'POST', 'http://localhost:8000/logout', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-21 02:24:21', '2023-02-21 02:24:21'),
-(42, 1, '127.0.0.1', 'berhasil Login', 'POST', 'http://localhost:8000/login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-21 02:32:41', '2023-02-21 02:32:41'),
-(43, 1, '127.0.0.1', 'berhasil membuat Transaksi', 'POST', 'http://localhost:8000/transaksi/member/3', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-21 02:56:21', '2023-02-21 02:56:21'),
-(44, 1, '127.0.0.1', 'berhasil Logout', 'POST', 'http://localhost:8000/logout', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-21 03:00:29', '2023-02-21 03:00:29'),
-(45, 1, '127.0.0.1', 'berhasil Login', 'POST', 'http://localhost:8000/login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-21 03:00:34', '2023-02-21 03:00:34'),
-(46, 1, '127.0.0.1', 'berhasil Logout', 'POST', 'http://localhost:8000/logout', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-21 03:00:39', '2023-02-21 03:00:39'),
-(47, 1, '127.0.0.1', 'berhasil Login', 'POST', 'http://localhost:8000/login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-22 01:41:21', '2023-02-22 01:41:21'),
-(48, 1, '127.0.0.1', 'berhasil mengubah Transaksi', 'PUT', 'http://localhost:8000/transaksi/6', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-22 01:53:14', '2023-02-22 01:53:14'),
-(49, 1, '127.0.0.1', 'berhasil mengubah Transaksi', 'PUT', 'http://localhost:8000/transaksi/4', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-22 01:54:12', '2023-02-22 01:54:12'),
-(50, 1, '127.0.0.1', 'berhasil menambahkan User', 'POST', 'http://localhost:8000/user', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-22 02:06:34', '2023-02-22 02:06:34'),
-(51, 1, '127.0.0.1', 'berhasil mengubah member', 'PUT', 'http://localhost:8000/member/5', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-22 02:20:57', '2023-02-22 02:20:57'),
-(52, 1, '127.0.0.1', 'berhasil mengubah member', 'PUT', 'http://localhost:8000/member/5', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-22 02:21:14', '2023-02-22 02:21:14'),
-(53, 1, '127.0.0.1', 'berhasil menambahkan Member', 'POST', 'http://localhost:8000/member', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-22 02:24:54', '2023-02-22 02:24:54'),
-(54, 1, '127.0.0.1', 'berhasil mengubah member', 'PUT', 'http://localhost:8000/member/6', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-22 02:25:20', '2023-02-22 02:25:20'),
-(55, 1, '127.0.0.1', 'berhasil menghapus Member', 'DELETE', 'http://localhost:8000/member/6', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-22 02:25:30', '2023-02-22 02:25:30'),
-(56, 1, '127.0.0.1', 'berhasil menambahkan User', 'POST', 'http://localhost:8000/user', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-22 02:26:44', '2023-02-22 02:26:44'),
-(57, 1, '127.0.0.1', 'berhasil mengubah User', 'PUT', 'http://localhost:8000/user/8', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-22 02:27:17', '2023-02-22 02:27:17'),
-(58, 1, '127.0.0.1', 'berhasil menghapus User', 'DELETE', 'http://localhost:8000/user/8', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-22 02:27:27', '2023-02-22 02:27:27'),
-(59, 1, '127.0.0.1', 'berhasil menambahkan Outlet', 'POST', 'http://localhost:8000/outlet', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-22 02:28:14', '2023-02-22 02:28:14'),
-(60, 1, '127.0.0.1', 'berhasil mengubah Outlet', 'PUT', 'http://localhost:8000/outlet/5', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-22 02:28:31', '2023-02-22 02:28:31'),
-(61, 1, '127.0.0.1', 'berhasil menghapus Outlet', 'DELETE', 'http://localhost:8000/outlet/5', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-22 02:28:41', '2023-02-22 02:28:41'),
-(62, 1, '127.0.0.1', 'berhasil menambahkan Paket', 'POST', 'http://localhost:8000/paket', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-22 02:29:29', '2023-02-22 02:29:29'),
-(63, 1, '127.0.0.1', 'berhasil mengubah paket', 'PUT', 'http://localhost:8000/paket/6', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-22 02:29:50', '2023-02-22 02:29:50'),
-(64, 1, '127.0.0.1', 'berhasil menghapus Paket', 'DELETE', 'http://localhost:8000/paket/6', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-22 02:30:03', '2023-02-22 02:30:03'),
-(65, 1, '127.0.0.1', 'berhasil membuat Transaksi', 'POST', 'http://localhost:8000/transaksi/member/1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-22 02:31:19', '2023-02-22 02:31:19'),
-(66, 1, '127.0.0.1', 'berhasil mengubah Transaksi', 'PUT', 'http://localhost:8000/transaksi/8', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-22 02:31:45', '2023-02-22 02:31:45'),
-(67, 1, '127.0.0.1', 'berhasil mencetak struk Transaksi', 'GET', 'http://localhost:8000/transaksi/8/invoice', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-22 02:32:18', '2023-02-22 02:32:18'),
-(68, 1, '127.0.0.1', 'berhasil membuat Laporan Harian', 'GET', 'http://localhost:8000/laporan/harian?_token=qqhVT2cez96r2zMzI1gPAKJfZuIEFhb9Mnia1dt9&outlet_id=1&tanggal=2023-02-22', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-22 02:32:46', '2023-02-22 02:32:46'),
-(69, 1, '127.0.0.1', 'berhasil membuat Laporan Bulanan', 'GET', 'http://localhost:8000/laporan/perbulan?_token=qqhVT2cez96r2zMzI1gPAKJfZuIEFhb9Mnia1dt9&bulan=2&outlet_id=1&tahun=2023', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-22 02:33:04', '2023-02-22 02:33:04');
+(1, 1, '127.0.0.1', 'berhasil Logout', 'POST', 'http://localhost:8000/logout', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 04:39:16', '2023-03-06 04:39:16'),
+(2, 1, '127.0.0.1', 'berhasil Login', 'POST', 'http://localhost:8000/login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 04:39:20', '2023-03-06 04:39:20'),
+(3, 1, '127.0.0.1', 'berhasil menambahkan Paket', 'POST', 'http://localhost:8000/paket', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 04:52:04', '2023-03-06 04:52:04'),
+(4, 1, '127.0.0.1', 'berhasil mengubah paket', 'PUT', 'http://localhost:8000/paket/3', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 04:55:48', '2023-03-06 04:55:48'),
+(5, 1, '127.0.0.1', 'berhasil membuat Transaksi', 'POST', 'http://localhost:8000/transaksi/member/1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 05:10:58', '2023-03-06 05:10:58'),
+(6, 1, '127.0.0.1', 'berhasil membuat Transaksi', 'POST', 'http://localhost:8000/transaksi/member/2', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 06:48:55', '2023-03-06 06:48:55'),
+(7, 1, '127.0.0.1', 'berhasil mengubah Transaksi', 'PUT', 'http://localhost:8000/transaksi/2', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 06:49:19', '2023-03-06 06:49:19'),
+(8, 1, '127.0.0.1', 'berhasil mengubah paket', 'PUT', 'http://localhost:8000/paket/1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 06:57:41', '2023-03-06 06:57:41'),
+(9, 1, '127.0.0.1', 'berhasil membuat Transaksi', 'POST', 'http://localhost:8000/transaksi/member/1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 06:58:59', '2023-03-06 06:58:59'),
+(10, 1, '127.0.0.1', 'berhasil mencetak struk Transaksi', 'GET', 'http://localhost:8000/transaksi/1/invoice', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 07:02:56', '2023-03-06 07:02:56'),
+(11, 1, '127.0.0.1', 'berhasil mencetak struk Transaksi', 'GET', 'http://localhost:8000/transaksi/1/invoice', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 07:04:34', '2023-03-06 07:04:34'),
+(12, 1, '127.0.0.1', 'berhasil mencetak struk Transaksi', 'GET', 'http://localhost:8000/transaksi/1/invoice', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 07:05:14', '2023-03-06 07:05:14'),
+(13, 1, '127.0.0.1', 'berhasil mencetak struk Transaksi', 'GET', 'http://localhost:8000/transaksi/1/invoice', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 07:10:57', '2023-03-06 07:10:57'),
+(14, 1, '127.0.0.1', 'berhasil mencetak struk Transaksi', 'GET', 'http://localhost:8000/transaksi/1/invoice', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 07:11:22', '2023-03-06 07:11:22'),
+(15, 1, '127.0.0.1', 'berhasil mencetak struk Transaksi', 'GET', 'http://localhost:8000/transaksi/2/invoice', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 07:13:40', '2023-03-06 07:13:40'),
+(16, 1, '127.0.0.1', 'berhasil membuat Transaksi', 'POST', 'http://localhost:8000/transaksi/member/1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 07:16:25', '2023-03-06 07:16:25'),
+(17, 1, '127.0.0.1', 'berhasil mencetak struk Transaksi', 'GET', 'http://localhost:8000/transaksi/4/invoice', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 07:17:51', '2023-03-06 07:17:51'),
+(18, 1, '127.0.0.1', 'berhasil mencetak struk Transaksi', 'GET', 'http://localhost:8000/transaksi/4/invoice', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 07:22:52', '2023-03-06 07:22:52'),
+(19, 1, '127.0.0.1', 'berhasil mencetak struk Transaksi', 'GET', 'http://localhost:8000/transaksi/2/invoice', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 07:24:03', '2023-03-06 07:24:03'),
+(20, 1, '127.0.0.1', 'berhasil mencetak struk Transaksi', 'GET', 'http://localhost:8000/transaksi/2/invoice', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 07:27:00', '2023-03-06 07:27:00'),
+(21, 1, '127.0.0.1', 'berhasil membuat Transaksi', 'POST', 'http://localhost:8000/transaksi/member/1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 07:28:58', '2023-03-06 07:28:58'),
+(22, 1, '127.0.0.1', 'berhasil mencetak struk Transaksi', 'GET', 'http://localhost:8000/transaksi/5/invoice', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 07:29:04', '2023-03-06 07:29:04'),
+(23, 1, '127.0.0.1', 'berhasil mencetak struk Transaksi', 'GET', 'http://localhost:8000/transaksi/5/invoice', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 07:31:57', '2023-03-06 07:31:57'),
+(24, 1, '127.0.0.1', 'berhasil membuat Transaksi', 'POST', 'http://localhost:8000/transaksi/member/1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 07:36:47', '2023-03-06 07:36:47'),
+(25, 1, '127.0.0.1', 'berhasil mencetak struk Transaksi', 'GET', 'http://localhost:8000/transaksi/6/invoice', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 07:37:32', '2023-03-06 07:37:32'),
+(26, 1, '127.0.0.1', 'berhasil mencetak struk Transaksi', 'GET', 'http://localhost:8000/transaksi/6/invoice', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 07:39:23', '2023-03-06 07:39:23'),
+(27, 1, '127.0.0.1', 'berhasil mencetak struk Transaksi', 'GET', 'http://localhost:8000/transaksi/6/invoice', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 07:39:48', '2023-03-06 07:39:48'),
+(28, 1, '127.0.0.1', 'berhasil mencetak struk Transaksi', 'GET', 'http://localhost:8000/transaksi/6/invoice', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 07:41:37', '2023-03-06 07:41:37'),
+(29, 1, '127.0.0.1', 'berhasil mencetak struk Transaksi', 'GET', 'http://localhost:8000/transaksi/6/invoice', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 07:42:10', '2023-03-06 07:42:10'),
+(30, 1, '127.0.0.1', 'berhasil mencetak struk Transaksi', 'GET', 'http://localhost:8000/transaksi/1/invoice', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 08:03:25', '2023-03-06 08:03:25'),
+(31, 1, '127.0.0.1', 'berhasil mencetak struk Transaksi', 'GET', 'http://localhost:8000/transaksi/1/invoice', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 08:04:55', '2023-03-06 08:04:55'),
+(32, 1, '127.0.0.1', 'berhasil mencetak struk Transaksi', 'GET', 'http://localhost:8000/transaksi/1/invoice', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 08:05:39', '2023-03-06 08:05:39'),
+(33, 1, '127.0.0.1', 'berhasil membuat Transaksi', 'POST', 'http://localhost:8000/transaksi/member/2', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 08:31:42', '2023-03-06 08:31:42'),
+(34, 1, '127.0.0.1', 'berhasil mencetak struk Transaksi', 'GET', 'http://localhost:8000/transaksi/7/invoice', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 08:31:46', '2023-03-06 08:31:46'),
+(35, 1, '127.0.0.1', 'berhasil membuat Transaksi', 'POST', 'http://localhost:8000/transaksi/member/2', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 08:34:29', '2023-03-06 08:34:29'),
+(36, 1, '127.0.0.1', 'berhasil membuat Transaksi', 'POST', 'http://localhost:8000/transaksi/member/2', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 08:39:14', '2023-03-06 08:39:14'),
+(37, 1, '127.0.0.1', 'berhasil mencetak struk Transaksi', 'GET', 'http://localhost:8000/transaksi/9/invoice', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 08:39:23', '2023-03-06 08:39:23'),
+(38, 1, '127.0.0.1', 'berhasil membuat Transaksi', 'POST', 'http://localhost:8000/transaksi/member/2', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 08:40:37', '2023-03-06 08:40:37'),
+(39, 1, '127.0.0.1', 'berhasil mencetak struk Transaksi', 'GET', 'http://localhost:8000/transaksi/10/invoice', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 08:40:43', '2023-03-06 08:40:43'),
+(40, 1, '127.0.0.1', 'berhasil mencetak struk Transaksi', 'GET', 'http://localhost:8000/transaksi/10/invoice', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 08:42:05', '2023-03-06 08:42:05'),
+(41, 1, '127.0.0.1', 'berhasil menghapus Paket', 'DELETE', 'http://localhost:8000/paket/2', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 08:47:03', '2023-03-06 08:47:03'),
+(42, 1, '127.0.0.1', 'berhasil menghapus Paket', 'DELETE', 'http://localhost:8000/paket/1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 08:47:19', '2023-03-06 08:47:19'),
+(43, 1, '127.0.0.1', 'berhasil menambahkan Paket', 'POST', 'http://localhost:8000/paket', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 08:47:42', '2023-03-06 08:47:42'),
+(44, 1, '127.0.0.1', 'berhasil Login', 'POST', 'http://localhost:8000/login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 12:19:12', '2023-03-06 12:19:12'),
+(45, 1, '127.0.0.1', 'berhasil menambahkan Member', 'POST', 'http://localhost:8000/member', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 12:20:14', '2023-03-06 12:20:14'),
+(46, 1, '127.0.0.1', 'berhasil menambahkan Member', 'POST', 'http://localhost:8000/member', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 12:20:39', '2023-03-06 12:20:39'),
+(47, 1, '127.0.0.1', 'berhasil menambahkan User', 'POST', 'http://localhost:8000/user', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 12:21:41', '2023-03-06 12:21:41'),
+(48, 1, '127.0.0.1', 'berhasil menambahkan Paket', 'POST', 'http://localhost:8000/paket', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 12:22:37', '2023-03-06 12:22:37'),
+(49, 1, '127.0.0.1', 'berhasil mengubah paket', 'PUT', 'http://localhost:8000/paket/4', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 12:23:09', '2023-03-06 12:23:09'),
+(50, 1, '127.0.0.1', 'berhasil menambahkan Paket', 'POST', 'http://localhost:8000/paket', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 12:24:19', '2023-03-06 12:24:19'),
+(51, 1, '127.0.0.1', 'berhasil membuat Transaksi', 'POST', 'http://localhost:8000/transaksi/member/3', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 12:25:53', '2023-03-06 12:25:53'),
+(52, 1, '127.0.0.1', 'berhasil mencetak struk Transaksi', 'GET', 'http://localhost:8000/transaksi/11/invoice', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 12:26:04', '2023-03-06 12:26:04'),
+(53, 1, '127.0.0.1', 'berhasil Logout', 'POST', 'http://localhost:8000/logout', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-06 12:26:50', '2023-03-06 12:26:50'),
+(54, 1, '127.0.0.1', 'berhasil Login', 'POST', 'http://localhost:8000/login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-07 01:10:30', '2023-03-07 01:10:30'),
+(55, 1, '127.0.0.1', 'berhasil membuat Transaksi', 'POST', 'http://localhost:8000/transaksi/member/3', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-07 01:12:29', '2023-03-07 01:12:29'),
+(56, 1, '127.0.0.1', 'berhasil mencetak struk Transaksi', 'GET', 'http://localhost:8000/transaksi/12/invoice', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-07 01:12:37', '2023-03-07 01:12:37'),
+(57, 1, '127.0.0.1', 'berhasil Login', 'POST', 'http://localhost:8000/login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-12 03:17:01', '2023-03-12 03:17:01'),
+(58, 1, '127.0.0.1', 'berhasil menambahkan Member', 'POST', 'http://localhost:8000/member', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-12 03:18:47', '2023-03-12 03:18:47'),
+(59, 1, '127.0.0.1', 'berhasil menghapus Member', 'DELETE', 'http://localhost:8000/member/5', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-12 03:19:09', '2023-03-12 03:19:09'),
+(60, 1, '127.0.0.1', 'berhasil menghapus Paket', 'DELETE', 'http://localhost:8000/paket/3', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-12 03:19:54', '2023-03-12 03:19:54'),
+(61, 1, '127.0.0.1', 'berhasil menambahkan Paket', 'POST', 'http://localhost:8000/paket', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-12 03:21:24', '2023-03-12 03:21:24'),
+(62, 1, '127.0.0.1', 'berhasil menambahkan Paket', 'POST', 'http://localhost:8000/paket', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-12 03:22:14', '2023-03-12 03:22:14'),
+(63, 1, '127.0.0.1', 'berhasil membuat Transaksi', 'POST', 'http://localhost:8000/transaksi/member/4', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-12 03:25:12', '2023-03-12 03:25:12'),
+(64, 1, '127.0.0.1', 'berhasil mencetak struk Transaksi', 'GET', 'http://localhost:8000/transaksi/13/invoice', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-12 03:25:27', '2023-03-12 03:25:27'),
+(65, 1, '127.0.0.1', 'berhasil membuat Laporan Bulanan', 'GET', 'http://localhost:8000/laporan/perbulan?_token=HIHBIkODyHUzs75L0qJBCFfmxktbkJEngPzpBa36&bulan=3&outlet_id=1&tahun=2023', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-12 03:27:49', '2023-03-12 03:27:49'),
+(66, 1, '127.0.0.1', 'berhasil Login', 'POST', 'http://localhost:8000/login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-12 04:42:44', '2023-03-12 04:42:44'),
+(67, 1, '127.0.0.1', 'berhasil membuat Transaksi', 'POST', 'http://localhost:8000/transaksi/member/3', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-12 04:44:19', '2023-03-12 04:44:19'),
+(68, 1, '127.0.0.1', 'berhasil membuat Transaksi', 'POST', 'http://localhost:8000/transaksi/member/4', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-12 04:49:44', '2023-03-12 04:49:44'),
+(69, 1, '127.0.0.1', 'berhasil mengubah Transaksi', 'PUT', 'http://localhost:8000/transaksi/9', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-12 04:50:37', '2023-03-12 04:50:37'),
+(70, 1, '127.0.0.1', 'berhasil Logout', 'POST', 'http://localhost:8000/logout', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-12 06:42:07', '2023-03-12 06:42:07'),
+(71, 1, '127.0.0.1', 'berhasil Login', 'POST', 'http://localhost:8000/login', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-03-12 06:42:25', '2023-03-12 06:42:25');
 
 -- --------------------------------------------------------
 
@@ -149,11 +151,10 @@ CREATE TABLE `members` (
 --
 
 INSERT INTO `members` (`id`, `nama`, `jenis_kelamin`, `alamat`, `tlp`) VALUES
-(1, 'Dina Rahmawati', 'P', 'Sindangrasa', '087712370378'),
-(2, 'Kim Namjoon', 'L', 'Sukanagara', '087712370986'),
-(3, 'Yuni Herlino', 'P', 'Padaherang', '087712378756'),
-(4, 'Melisa Putri', 'P', 'Cangkring', '888000222333'),
-(5, 'Roger Danuarta', 'L', 'Banjarsari', '888444555666');
+(1, 'Kim Namjoon', 'L', 'Sukanagara', '087712370986'),
+(2, 'Yuni Herlino', 'P', 'Padaherang', '087712378756'),
+(3, 'Dina Rahmawati', 'P', 'Sindangrasa', '00988877'),
+(4, 'Jungkook', 'L', 'Padaherang', '808080');
 
 -- --------------------------------------------------------
 
@@ -182,7 +183,9 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (8, '2023_02_06_110449_create_members_table', 1),
 (9, '2023_02_06_194150_create_transaksis_table', 1),
 (10, '2023_02_06_194750_create_transaksi_details_table', 1),
-(11, '2023_02_08_140245_create_log_activities_table', 1);
+(11, '2023_02_08_140245_create_log_activities_table', 1),
+(12, '2023_03_06_105745_add_diskon_and_harga_akhir_to_paket', 1),
+(13, '2023_03_06_113622_add_diskon_paket_to_transaksi_details_table', 1);
 
 -- --------------------------------------------------------
 
@@ -203,9 +206,7 @@ CREATE TABLE `outlets` (
 
 INSERT INTO `outlets` (`id`, `nama`, `alamat`, `tlp`) VALUES
 (1, 'Toko Dina Laundry', 'Sindangrasa', '087712370378'),
-(2, 'Toko Jisoo Laundry', 'Padaherang', '011223344556'),
-(3, 'Dika Ame Laundry', 'Anggaraksan, Desa Maruyungsari, Kec. Padaherang.', '999777666222'),
-(4, 'Caca Laundry', 'Tegalsari, Desa Cicapar, Kec. Banjarsari', '888222444555');
+(2, 'Toko Jisoo Laundry', 'Padaherang', '011223344556');
 
 -- --------------------------------------------------------
 
@@ -218,19 +219,21 @@ CREATE TABLE `pakets` (
   `outlet_id` bigint(20) UNSIGNED NOT NULL,
   `nama_paket` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `jenis` enum('kiloan','selimut','bed_cover','kaos','lain') COLLATE utf8mb4_unicode_ci NOT NULL,
-  `harga` int(11) NOT NULL
+  `diskon` int(11) DEFAULT NULL,
+  `harga` int(11) NOT NULL,
+  `harga_akhir` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Dumping data untuk tabel `pakets`
 --
 
-INSERT INTO `pakets` (`id`, `outlet_id`, `nama_paket`, `jenis`, `harga`) VALUES
-(1, 1, 'Reguler', 'kiloan', 7000),
-(2, 1, 'Bed Cover', 'bed_cover', 5000),
-(3, 4, 'Reguler (2 Hari)', 'kiloan', 8000),
-(4, 4, 'Expres (1 Hari)', 'kiloan', 15000),
-(5, 4, 'Expres (6 Jam)', 'kiloan', 25000);
+INSERT INTO `pakets` (`id`, `outlet_id`, `nama_paket`, `jenis`, `diskon`, `harga`, `harga_akhir`) VALUES
+(4, 1, 'Cuci Fast Hour (6 Jam)', 'kiloan', 1500, 35000, 33500),
+(5, 1, 'Cuci Cepat (1 Hari)', 'bed_cover', 2000, 35000, 33000),
+(6, 2, 'Expres', 'kiloan', 1000, 15000, 14000),
+(7, 1, 'Cuci Cepat', 'kaos', 5000, 40000, 35000),
+(8, 1, 'Cuci Expres 1 hari', 'kaos', NULL, 50000, 50000);
 
 -- --------------------------------------------------------
 
@@ -295,14 +298,21 @@ CREATE TABLE `transaksis` (
 --
 
 INSERT INTO `transaksis` (`id`, `outlet_id`, `member_id`, `user_id`, `kode_invoice`, `tgl`, `batas_waktu`, `tgl_bayar`, `biaya_tambahan`, `diskon`, `pajak`, `sub_total`, `qty_total`, `total_bayar`, `cash`, `kembalian`, `status`, `dibayar`) VALUES
-(1, 1, 2, 1, '202302100001', '2023-02-10 11:56:03', '2023-02-11 11:55:00', '2023-02-10 16:56:59', 1000, 2000, 2100, 22000, 4, 23100, 50000, 26900, 'diambil', 'dibayar'),
-(2, 1, 1, 1, '202302100002', '2023-02-10 17:20:32', '2023-02-11 17:20:00', '2023-02-10 17:20:32', 1000, 2000, 2000, 21000, 3, 22000, 50000, 28000, 'selesai', 'dibayar'),
-(3, 1, 3, 1, '202302100003', '2023-02-10 17:38:07', '2023-02-11 17:37:00', '2023-02-10 17:38:07', 1000, 1000, 3900, 39000, 7, 42900, 42900, 0, 'diambil', 'dibayar'),
-(4, 4, 4, 5, '202302130004', '2023-02-13 09:49:40', '2023-02-14 09:49:00', '2023-02-22 08:54:11', 5000, 1000, 5400, 50000, 2, 59400, 100000, 40600, 'proses', 'dibayar'),
-(5, 4, 4, 5, '202302130005', '2023-02-13 09:54:01', '2023-02-14 09:53:00', '2023-02-13 09:55:41', 5000, 1000, 5400, 50000, 2, 59400, 100000, 40600, 'diambil', 'dibayar'),
-(6, 1, 1, 1, '202302210006', '2023-02-21 08:39:29', '2023-02-22 08:39:00', '2023-02-22 08:53:14', 1000, 2000, 1400, 15000, 3, 15400, 100000, 84600, 'proses', 'dibayar'),
-(7, 1, 3, 1, '202302210007', '2023-02-21 09:56:21', '2023-02-22 09:56:00', '2023-02-21 09:56:21', 1000, 2000, 600, 7000, 1, 6600, 10000, 3400, 'baru', 'dibayar'),
-(8, 1, 1, 1, '202302220008', '2023-02-22 09:31:19', '2023-02-24 09:31:00', '2023-02-22 09:31:45', NULL, 2000, 2300, 25000, 5, 25300, 50000, 24700, 'selesai', 'dibayar');
+(1, 1, 1, 1, '202303060001', '2023-03-06 12:10:57', '2023-03-07 12:10:00', '2023-03-06 12:10:57', NULL, NULL, 3500, 35000, 1, 38500, 50000, 11500, 'diambil', 'dibayar'),
+(2, 1, 2, 1, '202303060002', '2023-03-06 13:48:55', '2023-03-07 13:48:00', '2023-03-06 13:49:19', NULL, NULL, 3500, 35000, 1, 38500, 50000, 11500, 'diambil', 'dibayar'),
+(3, 1, 1, 1, '202303060003', '2023-03-06 13:58:58', '2023-03-07 13:58:00', '2023-03-06 13:58:58', 3000, 2000, 1500, 14000, 2, 16500, 50000, 33500, 'baru', 'dibayar'),
+(4, 1, 1, 1, '202303060004', '2023-03-06 14:16:25', '2023-03-07 14:16:00', '2023-03-06 14:16:25', 3000, 2000, 600, 5000, 1, 6600, 50000, 43400, 'baru', 'dibayar'),
+(5, 1, 1, 1, '202303060005', '2023-03-06 14:28:58', '2023-03-07 14:28:00', '2023-03-06 14:28:58', 3000, 2000, 3600, 35000, 1, 39600, 50000, 10400, 'baru', 'dibayar'),
+(6, 1, 1, 1, '202303060006', '2023-03-06 14:36:46', '2023-03-07 14:36:00', '2023-03-06 14:36:46', NULL, NULL, 700, 7000, 1, 7700, 50000, 42300, 'baru', 'dibayar'),
+(7, 1, 2, 1, '202303060007', '2023-03-06 15:31:42', '2023-03-07 15:31:00', '2023-03-06 15:31:42', NULL, NULL, 2700, 27000, 1, 29700, 50000, 20300, 'baru', 'dibayar'),
+(8, 1, 2, 1, '202303060008', '2023-03-06 15:34:29', '2023-03-07 15:34:00', '2023-03-06 15:34:29', NULL, NULL, 2700, 27000, 1, 29700, 50000, 20300, 'baru', 'dibayar'),
+(9, 1, 2, 1, '202303060009', '2023-03-06 15:39:14', '2023-03-07 15:39:00', '2023-03-12 11:50:36', NULL, NULL, 2700, 27000, 1, 29700, 50000, 20300, 'baru', 'dibayar'),
+(10, 1, 2, 1, '202303060010', '2023-03-06 15:40:37', '2023-03-10 15:40:00', '2023-03-06 15:40:37', NULL, NULL, 5400, 54000, 2, 59400, 60000, 600, 'baru', 'dibayar'),
+(11, 1, 3, 1, '202303060011', '2023-03-06 19:25:52', '2023-03-07 19:25:00', '2023-03-06 19:25:52', NULL, 2000, 9700, 99000, 3, 106700, 110000, 3300, 'selesai', 'dibayar'),
+(12, 1, 3, 1, '202303070012', '2023-03-07 08:12:29', '2023-03-08 08:12:00', '2023-03-07 08:12:29', 3000, 2000, 3400, 33000, 1, 37400, 50000, 12600, 'baru', 'dibayar'),
+(13, 1, 4, 1, '202303120013', '2023-03-12 10:25:12', '2023-03-13 10:23:00', '2023-03-12 10:25:12', NULL, 4000, 9600, 100000, 2, 105600, 110000, 4400, 'diambil', 'dibayar'),
+(14, 1, 3, 1, '202303120014', '2023-03-12 11:44:19', '2023-03-13 11:44:00', NULL, 3000, 2000, 3450, 33500, 1, 37950, NULL, NULL, 'baru', 'belum_bayar'),
+(15, 1, 4, 1, '202303120015', '2023-03-12 11:49:43', '2023-03-13 11:49:00', NULL, NULL, 2000, 3300, 35000, 1, 36300, NULL, NULL, 'proses', 'belum_bayar');
 
 -- --------------------------------------------------------
 
@@ -315,6 +325,7 @@ CREATE TABLE `transaksi_details` (
   `transaksi_id` bigint(20) UNSIGNED NOT NULL,
   `paket_id` bigint(20) UNSIGNED NOT NULL,
   `harga` int(11) NOT NULL,
+  `diskon_paket` int(11) DEFAULT NULL,
   `qty` int(11) NOT NULL,
   `sub_total` int(11) NOT NULL,
   `keterangan` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
@@ -324,17 +335,12 @@ CREATE TABLE `transaksi_details` (
 -- Dumping data untuk tabel `transaksi_details`
 --
 
-INSERT INTO `transaksi_details` (`id`, `transaksi_id`, `paket_id`, `harga`, `qty`, `sub_total`, `keterangan`) VALUES
-(1, 1, 2, 5000, 3, 15000, NULL),
-(2, 1, 1, 7000, 1, 7000, NULL),
-(3, 2, 1, 7000, 3, 21000, NULL),
-(4, 3, 2, 5000, 5, 25000, 'Guling 3, Kasur 2'),
-(5, 3, 1, 7000, 2, 14000, 'kolor 2'),
-(6, 4, 5, 25000, 2, 50000, NULL),
-(7, 5, 5, 25000, 2, 50000, NULL),
-(8, 6, 2, 5000, 3, 15000, NULL),
-(9, 7, 1, 7000, 1, 7000, NULL),
-(10, 8, 2, 5000, 5, 25000, NULL);
+INSERT INTO `transaksi_details` (`id`, `transaksi_id`, `paket_id`, `harga`, `diskon_paket`, `qty`, `sub_total`, `keterangan`) VALUES
+(11, 11, 5, 35000, 2000, 3, 99000, 'baju 2, celana 3'),
+(12, 12, 5, 35000, 2000, 1, 33000, 'baju'),
+(13, 13, 8, 50000, NULL, 2, 100000, 'celana bahan 1, baju 5 setel'),
+(14, 14, 4, 35000, 1500, 1, 33500, 'baju, baju'),
+(15, 15, 7, 40000, 5000, 1, 35000, 'celana 1');
 
 -- --------------------------------------------------------
 
@@ -359,13 +365,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `nama`, `username`, `password`, `role`, `remember_token`, `created_at`, `updated_at`, `outlet_id`) VALUES
-(1, 'Administrator', 'admin', '$2y$10$JIo7tjiWsX2krH6g6zkNPuH8tG8X1m7BTD9ZwQQqZFPoogqZmTxse', 'admin', NULL, NULL, NULL, 1),
-(2, 'Kasir', 'kasir', '$2y$10$wMcKxoAF3w8SDw7d0zz2Qee5CSiPYZk1Ffsc/FfXRlh9eHJGB3Ie2', 'kasir', NULL, NULL, NULL, 1),
-(3, 'Pemilik', 'owner', '$2y$10$0AKdE0GnwaDQOA.3obO94eF8PGVzulv9NNsaTNwGVnqwdlIqGSKWy', 'owner', NULL, NULL, NULL, 1),
-(4, 'Pevita Pearce', 'pevita', '$2y$10$J.uxY4DmeP7oyKg1WIr/7.K2Xy3YuyrqAsShtFR/6kTd3yuaezExW', 'kasir', NULL, '2023-02-10 06:56:06', '2023-02-10 06:56:06', 3),
-(5, 'Unaa', 'unaa', '$2y$10$TtR2pf/YHZOdV/MQo8ZREe/47SV.YViHi0a/2e6Z1QaN1uP7Jg1bO', 'kasir', NULL, '2023-02-10 07:04:52', '2023-02-10 07:04:52', 4),
-(6, 'Rini Yulia', 'rini', '$2y$10$vBcxs.lSDX6h6oSxPNusbenvP1BUZK21sUcxC72iuWrYFhmPfx0J.', 'kasir', NULL, '2023-02-10 07:05:21', '2023-02-10 07:11:37', 4),
-(7, 'Jungkook', 'jeon', '$2y$10$V2pKrKRE9zIDqqXqfawFV.VLcxnXHRhGTC8gfHPbgMi12aWXhzaf6', 'kasir', NULL, '2023-02-22 02:06:33', '2023-02-22 02:06:33', 1);
+(1, 'Administrator', 'admin', '$2y$10$ZXMiTDOnhDToJHXXu4LrseskFhmwskCSOETynWUD4O5Hs2X81LQ2S', 'admin', NULL, NULL, NULL, 1),
+(2, 'Kasir', 'kasir', '$2y$10$Ac0L/TobSOogn8W1wWjTi.N4jIFfKlTaQ/runCAIQi.huCZEqfj0.', 'kasir', NULL, NULL, NULL, 1),
+(3, 'Pemilik', 'owner', '$2y$10$pdTJ8XHtBilSyufBwahHBuc94xr.AEK.ikNydrHBI30qQbFUSfiKW', 'owner', NULL, NULL, NULL, 1),
+(4, 'Rahmawati', 'dina', '$2y$10$QFdQ9jSu5KPUexaAWwoNSuWAAwm6GhMl7bj1C0Uq1MIzB.HrbeSVm', 'kasir', NULL, '2023-03-06 12:21:41', '2023-03-06 12:21:41', 2);
 
 --
 -- Indexes for dumped tables
@@ -464,31 +467,31 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT untuk tabel `log_activities`
 --
 ALTER TABLE `log_activities`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
 
 --
 -- AUTO_INCREMENT untuk tabel `members`
 --
 ALTER TABLE `members`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT untuk tabel `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT untuk tabel `outlets`
 --
 ALTER TABLE `outlets`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT untuk tabel `pakets`
 --
 ALTER TABLE `pakets`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT untuk tabel `personal_access_tokens`
@@ -500,19 +503,19 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT untuk tabel `transaksis`
 --
 ALTER TABLE `transaksis`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT untuk tabel `transaksi_details`
 --
 ALTER TABLE `transaksi_details`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT untuk tabel `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
